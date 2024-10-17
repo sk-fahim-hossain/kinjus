@@ -23,18 +23,18 @@ const Hero = () => {
     return (
         <section className='hero wrapper' ref={heroRef}>
             <h1 className='ehternal'>
-                Ethernal <span ref={shutter1}></span>
+                Infinite <span ref={shutter1}></span>
             </h1>
             <h1  className='canvas'>
                 Canvas <span ref={shutter2}></span>
             </h1>
 
             <div className="photos">
-                <div ref={photo1Ref} className="photo one" style={{backgroundImage:'url("https://images.pexels.com/photos/4836368/pexels-photo-4836368.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1&quot")'}}></div>
-                <div ref={photo2Ref} className="photo two" style={{backgroundImage:'url("https://images.pexels.com/photos/10046283/pexels-photo-10046283.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1&quot")'}}></div>
-                <div ref={photo3Ref} className="photo three" style={{backgroundImage:'url("https://images.pexels.com/photos/6577903/pexels-photo-6577903.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1&quot")'}}></div>
-                <div ref={photo4Ref} className="photo four" style={{backgroundImage:'url("https://images.pexels.com/photos/7584538/pexels-photo-7584538.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1&quot")'}}></div>
-                <div ref={photo5Ref} className="photo five" style={{backgroundImage:'url("https://images.pexels.com/photos/4019766/pexels-photo-4019766.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1&quot")'}}></div>
+                <div ref={photo1Ref} className="photo one" style={{backgroundImage:'url("https://images.pexels.com/photos/2708981/pexels-photo-2708981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")'}}></div>
+                <div ref={photo2Ref} className="photo two" style={{backgroundImage:'url("https://images.pexels.com/photos/17302471/pexels-photo-17302471/free-photo-of-motivational-quotes-painted-on-the-wall.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load")'}}></div>
+                <div ref={photo3Ref} className="photo three" style={{backgroundImage:'url("https://images.pexels.com/photos/1619779/pexels-photo-1619779.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")'}}></div>
+                <div ref={photo4Ref} className="photo four" style={{backgroundImage:'url("https://images.pexels.com/photos/6029524/pexels-photo-6029524.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")'}}></div>
+                <div ref={photo5Ref} className="photo five" style={{backgroundImage:'url("https://images.pexels.com/photos/28962891/pexels-photo-28962891/free-photo-of-vibrant-nightlife-at-iconic-colony-hotel.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")'}}></div>
             </div>
         </section>
     );

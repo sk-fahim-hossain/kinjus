@@ -138,8 +138,8 @@ export const useGsapFeatureRightShutterUnveil = (item, triq) => {
 }
 
 export const useGsapGalleryImage = (item) => {
-    const el = item.current;
     useEffect(() => {
+        const el = item.current;
         gsap.fromTo(el,
             {
                 x: 0,
@@ -162,8 +162,8 @@ export const useGsapGalleryImage = (item) => {
 }
 
 export const useGsapGalleryTitle = (item, trig) => {
-    const el = item.current;
     useEffect(() => {
+        const el = item.current;
         gsap.fromTo(el,
             {
                 x: "30%",
@@ -184,8 +184,8 @@ export const useGsapGalleryTitle = (item, trig) => {
 }
 
 export const useGsapCategory = (item, trig) => {
-    const el = item.current;
     useEffect(() => {
+        const el = item.current;
         gsap.fromTo(el,
             {
                 x: "30%",
@@ -249,6 +249,22 @@ export const useGsapNotFoundRightText = (item) =>{
             },
             {
                 x: 0,
+                ease:Expo.easeInOut,
+                duration: 1.2
+            }
+        )
+    },[])
+}
+
+export const useGsapMobileMenu = (item) =>{
+    useEffect(() => {
+        const el = item.current;
+        gsap.fromTo(el,
+            {
+            y: "-100%",
+            },
+            {
+                y: 0,
                 ease:Expo.easeInOut,
                 duration: 1.2
             }

@@ -7,8 +7,10 @@ function App(children) {
   useSmoothScoll()
   return (
     <div>
+     
+
       <Navbar />
-      <Home/>
+      <Home />
       <Footer />
     </div>
   )
