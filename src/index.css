@@ -292,7 +292,7 @@ section {
     letter-spacing: 10px;
 }
 
-/* ============ Footer============= */
+/* ============ Footer ============= */
 
 .footer {
     min-height: 100vh;
@@ -346,8 +346,10 @@ section {
 .not-found-img {
     width: 250px;
     height: 250px;
-}
+} 
+
 /* ============== mobile menu ===================*/
+
 .mobile-menu-items{
     display: flex;
     flex-direction: column;
@@ -391,53 +393,173 @@ section {
     .feature-shutter-r{
         width: 80vh;
     }
+
     .gallery-wrapper{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 40vh;
     }
     .gallery-item-img{
         height: 80vh;
     }
-    .gallery-item{
-        margin-top: 150px;
+    
+    .gallery-item-title{
+        width:  50vw;
     }
+    .gallery-item-category{
+        font-size:  3vw;
+    }
+ 
+    
+    .gallery-item:first-child{
+        margin-top: 20px;
+    }
+  
+    .photos {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        width: 100vw;
+        height: 80vh;
+        z-index: 2;
+    }
+    .photo.one {
+        grid-column: 5/6;
+        grid-row: 1 ;
+    }
+    .photo.two {
+        grid-column: 2/3;
+        grid-row: 2 ;
+    }
+    .photo.three {
+        grid-column: 6/7;
+        grid-row: 3 ;
+    }
+    .photo.five {
+        grid-column: 4/5;
+        grid-row: 5 ;
+    }
+
+    
+
+    .about p{
+        font-size: 4vw;
+    }
+
+
     .footer{
-        min-height: 6cqi;
+        min-height: 80vh;
+        justify-content: center;
+        align-items: center;
     }
+    
+   
+    
 }
 
+/* Styles for extra small devices */
 @media (min-width: 355px) and (max-width: 575px) {
-    /* Styles for extra small devices */
     .mobile-menu{
         display: block;
     }
-
     .nav-wrap {
         display: none;
     }
     .features{
         display: block;
     }
+    /* .feature-shutter-l{
+        width: 80vh;
+    }
+    .featured-l{
+        width: 80vh;
+        margin-top: 100px;
+    }
+    .featured-r{
+        width: 80vh;
+        margin-top: 100px;
+        padding-bottom: 20vh;
+    } */
+
     .gallery-wrapper{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 40vh;
     }
     .gallery-item-img{
-        height: 90vh;
+        height: 80vh;
     }
-    .gallery-item{
-        margin-top: 150px;
+    
+    .gallery-item-title{
+        width:  50vw;
+    }
+    .gallery-item-category{
+        font-size:  3vw;
+        z-index: 2;
+    }
+ 
+    
+    .gallery-item:first-child{
+        margin-top: 20px;
+    }
+  
+    .photos {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        width: 100vw;
+        height: 80vh;
+        z-index: 2;
+    }
+    .photo.one {
+        grid-column: 5/6;
+        grid-row: 1 ;
+    }
+    .photo.two {
+        grid-column: 2/3;
+        grid-row: 2 ;
+    }
+    .photo.three {
+        grid-column: 6/7;
+        grid-row: 3 ;
+    }
+    .photo.five {
+        grid-column: 4/5;
+        grid-row: 5 ;
+    }
+
+    
+
+    .about p{
+        font-size: 4vw;
+    }
+
+
+    .footer{
+        min-height: 80vh;
+        justify-content: center;
+        align-items: center;
     }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
     /* Styles for small devices */
-    .mobile-menu{
+    /* .mobile-menu{
         display: block;
     }
 
@@ -446,8 +568,8 @@ section {
     }
     .features{
         display: block;
-    }
-    .gallery-wrapper{
+    } */
+    /* .gallery-wrapper{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -458,7 +580,7 @@ section {
     }
     .gallery-item{
         margin-top: 150px;
-    }
+    } */
 }
 
 /* Medium devices (tablets, 768px and up) */

@@ -146,8 +146,8 @@ export const useGsapGalleryImage = (item) => {
                 width: 0,
             },
             {
-                x: "20%",
-                width: "100%",
+                x: "10vw",
+                width: "100vw",
                 duration: 1,
                 ease: Expo.easeInOut,
                 scrollTrigger: {
